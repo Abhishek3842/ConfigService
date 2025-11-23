@@ -1,0 +1,24 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: lawyers-service
+  datasource:
+    url: jdbc:postgresql://postgres:5432/lawyer_db
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

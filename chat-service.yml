@@ -1,0 +1,28 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: chat-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: chat_db
+    redis:
+      host: localhost
+      port: 6379
+logging:
+  level:
+    org.springframework.web.socket: TRACE
+    org.springframework.messaging: TRACE
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+jwt:
+  public-key: |
+    -----BEGIN PUBLIC KEY-----
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyLkxxP3k4aN3zGUI4n6NvbuistNqXN9ggRCZ7pFc1RZ8Rf0wDrAPiTDpzkV7Ux5HKgeBEOBLY3o20jsQJQx/kuZJdvHh7mW7CrtyEs90zECiig3qqJ+n2d+ze/lyS8VbxYIwEAEunt2TsRKyly2mEc+fPGuGqCT3UP9iSj9+DyH9RcBNCfKlvThs0R5JKfNTwuMmEUeT7qSFKtXRd6d3gWEtutL2SSm+aqgbgDj5KeJciXJn9RVDfEKKJJoeOevvkwCiDSOYPZGtp8gYJIc2E9aCKT4jANK0cLkZp02ctBOCgL+xaDzUWm5qbL0HENeyoiOjc/Yn3HB2UnE9KNrVZQIDAQAB
+    -----END PUBLIC KEY-----
