@@ -5,9 +5,10 @@ spring:
   application:
     name: auth-service
   datasource:
-    url: jdbc:postgresql://postgres:5432/auth-db
-    username: ${POSTGRES_USER:postgres}
-    password: ${POSTGRES_PASSWORD:postgres}
+    url: jdbc:postgresql://host.docker.internal:5433/auth-db
+    username: postgres
+    password: postgres
+
   jpa:
     hibernate:
       ddl-auto: update

@@ -4,9 +4,9 @@ spring:
   application:
     name: lawyers-service
   datasource:
-    url: jdbc:postgresql://postgres:5432/lawyer_db
-    username: ${POSTGRES_USER:postgres}
-    password: ${POSTGRES_PASSWORD:postgres}
+    url: jdbc:postgresql://postgres:5433/lawyer_db
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect

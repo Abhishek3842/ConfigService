@@ -4,9 +4,9 @@ spring:
   application:
     name: clients-service
   datasource:
-    url: jdbc:postgresql://postgres:5432/client_db
-    username: ${POSTGRES_USER:postgres}
-    password: ${POSTGRES_PASSWORD:postgres}
+    url: jdbc:postgresql://postgres:5433/client_db
+    username: postgres
+    password: postgres
   jpa:
     hibernate:
       ddl-auto: update
