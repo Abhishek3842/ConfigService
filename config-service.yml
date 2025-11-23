@@ -8,5 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Abhishek3842/Config_Service.git
+          uri: https://github.com/Abhishek3842/ConfigService
           default-label: main
