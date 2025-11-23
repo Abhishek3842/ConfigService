@@ -6,9 +6,7 @@ spring:
     name: chat-service
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: chat_db
+      uri: mongodb://mongo-db:27017/chat-db
     redis:
       host: localhost
       port: 6379
