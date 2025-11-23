@@ -6,7 +6,7 @@ spring:
     name: queries-service
 
   datasource:
-    url: jdbc:postgresql://postgres:5433/complaint_db
+    url: jdbc:postgresql://postgres-db:5432/complaint_db
     username: postgres
     password: postgres
   jpa:
@@ -16,4 +16,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://discovery-service:8761/eureka
