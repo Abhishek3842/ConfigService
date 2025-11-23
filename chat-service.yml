@@ -20,7 +20,7 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka/
 jwt:
   public-key: |
     -----BEGIN PUBLIC KEY-----
